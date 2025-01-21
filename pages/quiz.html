@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../script.js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz Page</h1>
+        <nav>
+            <div class="nav-container">
+                
+                <div class="links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="academic.html">Academic Background</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Scientific Events</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Test Your Knowledge!</h2>
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>1. What is the primary programming language used in Android app development?</p>
+                    <label><input type="radio" name="q1" value="a"> Python</label><br>
+                    <label><input type="radio" name="q1" value="b"> Kotlin</label><br>
+                    <label><input type="radio" name="q1" value="c"> JavaScript</label><br>
+                    <label><input type="radio" name="q1" value="d"> Ruby</label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>2. What is the time complexity of binary search?</p>
+                    <label><input type="radio" name="q2" value="a"> O(n)</label><br>
+                    <label><input type="radio" name="q2" value="b"> O(log n)</label><br>
+                    <label><input type="radio" name="q2" value="c"> O(n^2)</label><br>
+                    <label><input type="radio" name="q2" value="d"> O(1)</label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>3. Which AI model is commonly used for image recognition tasks?</p>
+                    <label><input type="radio" name="q3" value="a"> RNN</label><br>
+                    <label><input type="radio" name="q3" value="b"> CNN</label><br>
+                    <label><input type="radio" name="q3" value="c"> GAN</label><br>
+                    <label><input type="radio" name="q3" value="d"> LSTM</label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <p>4. What is the purpose of a version control system like Git?</p>
+                    <label><input type="radio" name="q4" value="a"> Debugging code</label><br>
+                    <label><input type="radio" name="q4" value="b"> Managing project dependencies</label><br>
+                    <label><input type="radio" name="q4" value="c"> Tracking changes in code</label><br>
+                    <label><input type="radio" name="q4" value="d"> Optimizing performance</label>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question">
+                    <p>5. What does "CI/CD" stand for in software engineering?</p>
+                    <label><input type="radio" name="q5" value="a"> Continuous Integration/Continuous Deployment</label><br>
+                    <label><input type="radio" name="q5" value="b"> Code Inspection/Code Debugging</label><br>
+                    <label><input type="radio" name="q5" value="c"> Cloud Infrastructure/Container Development</label><br>
+                    <label><input type="radio" name="q5" value="d"> Client Interaction/Code Delivery</label>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question">
+                    <p>6. Which algorithm is commonly used for training neural networks?</p>
+                    <label><input type="radio" name="q6" value="a"> Backpropagation</label><br>
+                    <label><input type="radio" name="q6" value="b"> A* Search</label><br>
+                    <label><input type="radio" name="q6" value="c"> Dijkstra's Algorithm</label><br>
+                    <label><input type="radio" name="q6" value="d"> Genetic Algorithm</label>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question">
+                    <p>7. What is "overfitting" in machine learning?</p>
+                    <label><input type="radio" name="q7" value="a"> A model that generalizes well</label><br>
+                    <label><input type="radio" name="q7" value="b"> A model that performs poorly on training data</label><br>
+                    <label><input type="radio" name="q7" value="c"> A model that performs well on training data but poorly on new data</label><br>
+                    <label><input type="radio" name="q7" value="d"> A model that is too simple</label>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question">
+                    <p>8. What does "API" stand for?</p>
+                    <label><input type="radio" name="q8" value="a"> Application Programming Interface</label><br>
+                    <label><input type="radio" name="q8" value="b"> Automated Process Integration</label><br>
+                    <label><input type="radio" name="q8" value="c"> Artificial Process Interaction</label><br>
+                    <label><input type="radio" name="q8" value="d"> Applied Programming Instruction</label>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question">
+                    <p>9. Which of the following is an example of supervised learning?</p>
+                    <label><input type="radio" name="q9" value="a"> K-Means Clustering</label><br>
+                    <label><input type="radio" name="q9" value="b"> Decision Tree Classification</label><br>
+                    <label><input type="radio" name="q9" value="c"> Apriori Algorithm</label><br>
+                    <label><input type="radio" name="q9" value="d"> PCA (Principal Component Analysis)</label>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question">
+                    <p>10. Which of these is NOT a programming paradigm?</p>
+                    <label><input type="radio" name="q10" value="a"> Object-Oriented</label><br>
+                    <label><input type="radio" name="q10" value="b"> Functional</label><br>
+                    <label><input type="radio" name="q10" value="c"> Procedural</label><br>
+                    <label><input type="radio" name="q10" value="d"> Relational</label>
+                </div>
+
+                <button type="button" id="submitQuiz">Submit Quiz</button>
+            </form>
+
+            <div id="quizResults" style="display: none; margin-top: 20px;">
+                <h3>Your Results</h3>
+                <p id="score"></p>
+                <div id="correctAnswers"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 rihem baccari. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,514 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+   
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+  overflow-y: auto; 
+  margin: 0;        
+  padding: 0;       
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+}
+
+header {
+ 
+  display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.nav-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.logo span{
+  color: rgb(109,67, 0);
+  text-shadow: 0 0 10px rgb(109,67, 0);
+}
+.nav-container .links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-container .links a{
+  position: relative;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transform: 0.3s linear;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+  
+  
+}
+.nav-container .links a::before{
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(109,67, 0);
+  transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+  width: 100%;
+}
+
+
+
+main {
+  padding: 2rem;
+}
+.content{
+  margin-top: -500px;
+}
+
+footer {
+ 
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+ 
+}
+
+
+
+/* General Styling for Internships/Work Experience Page */
+.main-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: right;
+}
+main h1{
+  float: right; 
+  width: 50%; 
+  margin-left: 10px;
+}
+
+
+main h2 {
+ 
+  color: rgb(109,67, 0);
+  text-shadow: 0 0 10px rgb(109,67, 0);
+  float: right; 
+  width: 50%; 
+  margin-left: 10px;
+  
+}
+main p{
+  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+  margin: 10px 0;
+  float: right; 
+  width: 50%; 
+  margin-left: 10px; 
+}
+main.experience h2{
+  margin-top: -60px;
+}
+/* Ensure global left alignment for all content in .experience */
+.experience {
+  text-align: left; /* Align text to the left */
+}
+
+/* Specific fixes for articles */
+.experience article {
+  display: block; /* Make sure the article acts as a block */
+  margin: 0; /* Reset any margins */
+  padding: 0; /* Reset any padding */
+  text-align: left; /* Align all content inside to the left */
+}
+
+/* Fix for Duration and paragraphs */
+.experience article p {
+  margin: 0; /* Remove extra margins */
+  padding: 0; /* Remove extra padding */
+  text-align: left; /* Explicitly align text to the left */
+}
+
+/* General alignment for the whole section */
+.experience {
+  text-align: left; /* Align all text to the left */
+}
+
+/* Ensure all lists inside articles are properly aligned */
+.experience article ul {
+  margin: 0; /* Remove any default margin */
+  padding-left: 20px; /* Add space for indentation of bullets */
+  list-style-position: inside; /* Ensure bullets align with text */
+  text-align: left; /* Align the text of the entire list */
+}
+
+/* Ensure all list items are aligned properly */
+.experience article ul li {
+  text-align: left; /* Align the text of list items */
+  margin: 0; /* Remove extra margins */
+  padding: 0; /* Remove extra padding */
+  display: list-item; /* Ensure list items behave properly */
+}
+
+/* Debugging potential float issues */
+.experience article ul li:first-child {
+  float: none; /* Remove any floating if applied */
+  clear: both; /* Ensure it doesn’t conflict with floated elements */
+}
+
+/* Remove unexpected float or positioning on Duration */
+.experience article .duration {
+  float: none; /* Remove floating if applied */
+  text-align: left; /* Ensure left alignment */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  width: auto; /* Ensure it doesn't stretch */
+}
+
+
+
+main .media ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+main .media ul li {
+  margin-bottom: 10px; 
+  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+  margin: 10px 0;
+  float: right; 
+  width: 50%; 
+  margin-left: 10px; 
+}
+
+main .media ul li a {
+  text-decoration: none; 
+  color: black; 
+  font-weight:500; 
+}
+
+main .media ul li a:hover {
+  color: rgb(109,67, 0);; 
+  text-decoration: underline; 
+}
+main img {
+  max-width: 30%; 
+  height: auto; 
+  margin: 20px auto; 
+}
+
+.experience.article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+article h3 {
+  color: rgb(109,67, 0);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin: 0.5rem 0;
+  color: rgb(109,67, 0);;
+  line-height: 1.6;
+  float: left; 
+     
+  
+}
+
+article ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+ 
+}
+
+article ul li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  
+}
+/* Scientific Events Page Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+section h2 {
+  color: rgb(109,67, 0);
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+article h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+article img {
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+/* Studied Subjects Page Specific Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.content-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color:transparent;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+h1 {
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background-color: #f4f4f4;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Passions and Hobbies Page Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+section h2 {
+  color: #444;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+article h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+article img {
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+footer p {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+/* Quiz Page Styling */
+form {
+  margin: 20px 0;
+}
+
+.question {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.question p {
+  font-weight: bold;
+  color: #333;
+}
+
+#submitQuiz {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitQuiz:hover {
+  background-color: #0056b3;
+}
+
+#quizResults {
+  padding: 15px;
+  background-color: #f0f8ff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/*contact page styling*/
+
+
+/* Style for the form to make it visually appealing */
+main.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;         
+  margin: 0;
+  text-align: center;      /* Center text inside main */
+}
+#contactForm {
+  background-color:transparent; /* White background for the form */
+  padding: 20px;           /* Padding around the form */
+  border-radius: 8px;      /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;             /* Make form full width */
+  max-width: 600px;        /* Limit form width */
+  
+  
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px; /* Space between each form input */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #0078d7; 
+  color: white;              
+  padding: 10px 20px;        
+  border: none;              
+  border-radius: 4px;        
+  cursor: pointer;           
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #005a8d; 
+}
+/*testimonials modifications */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between each testimonial */
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column; /* Ensures name and paragraph are vertically aligned */
+  align-items: flex-start; /* Aligns content to the left */
+}
+
+.testimonial h4 {
+  margin: 0; /* Removes extra margin for better spacing */
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.testimonial p {
+  margin: 5px 0 0; /* Adds slight margin below the name */
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+
+
+
+
+
